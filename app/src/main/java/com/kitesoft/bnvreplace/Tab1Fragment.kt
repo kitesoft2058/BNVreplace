@@ -24,6 +24,8 @@ class Tab1Fragment : Fragment() {
         //return inflater.inflate(R.layout.fragment_tab1, container, false)
     }
 
+    //***   onGetLayoutInflater() cannot be executed until the Fragment is attached to the FragmentManager. ************
+    //val binding = FragmentTab1Binding.inflate(layoutInflater) //error
     val binding by lazy { FragmentTab1Binding.inflate(layoutInflater) }
 
     override fun onDestroyView() {
